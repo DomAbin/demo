@@ -6,12 +6,6 @@ pipeline {
 
   }
   stages {
-    stage('Allocate Node') {
-      steps {
-        node(label: 'slave1')
-      }
-    }
-
     stage('Checkout') {
       steps {
         git 'https://github.com/DomAbin/Devops_demo.git'
